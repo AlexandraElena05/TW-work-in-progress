@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 3vw;
+    }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        width: 100%;
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+
+    .left-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    #logo {
+        padding-bottom: 0.9rem;
+        color: #2A2B40;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .icon {
+        color: #2A2B40;
+        padding-bottom: 0.5rem;
+    }
+
+    #myLinks {
+        display: none;
+    }
+
+    p a {
+        display: block;
+        color: #2A2B40;
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.3rem;
+        font-weight: normal;
+    }
+
+    .right-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        margin-right: 1.42rem;
+        position: absolute;
+        top: 1.5rem;
+        left: 25rem;
+    }
+
+    .right-menu p {
+        margin: 0.6rem 0;
+    } 
+
+    hr {
+        border: 0;
+        height: 0;
+        box-shadow: 0 0 0.2rem 0.1rem rgb(235, 3, 3);
+    }
+
+    
+}
+
+@media (min-width: 701px){
+    html {
+        font-size: 1.2vw;
+    }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 1rem 3.33rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .left-menu, .right-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    #logo {
+        color: #2A2B40;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    #myLinks {
+        margin-left: 5rem;
+    }
+
+    .active {
+        text-decoration: underline;
+        text-decoration-color: #2A2B40;
+    }
+
+    p {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    p a {
+        display: block;
+        padding: 0 0.8rem 0 2rem;
+        color: #2A2B40;
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+
+    hr {
+        border: 0;
+        height: 0;
+        box-shadow: 0 0 0.2rem 0.13rem rgb(235, 3, 3);
+    }
+
+    .content {
+        padding: 1rem 4.33rem;
+    }
+
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        color: #2A2B40;
+    }
+
+    /* .content p {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.2rem;
+        font-weight: normal;
+        line-height: 2.3rem;
+        padding-bottom: 1rem;
+    } */
+
+    .users-table {
+        font-family: 'Raleway', sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid #2A2B40;
+    }
+      
+    .users-table td {
+        padding: 15px;
+        text-align: center;
+    }
+      
+    .users-table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        text-align: center;
+        background-color: #3fc699;
+        color: white;
+    }
+
+    .users-table td a{
+        font-family: 'Raleway', sans-serif;
+        /* font-size: 1.2rem; */
+        cursor: pointer;
+        color:#ffffff;
+        padding: 10px 5px;
+        border-radius: 0.4rem;
+        background-color: #f79b9b;
+        text-decoration: none;
+    }
+
+    #delete-user {
+        background-color: #d11a2a;
+    }
+
+    #delete-user:hover {
+        background-color: #ff4b5b;
+    }
+
+    #update-user {
+        background-color: #3225d9;
+        margin-right: 15px;
+    }
+
+    #update-user:hover {
+        background-color: #5346fa;
+    }
+
+}

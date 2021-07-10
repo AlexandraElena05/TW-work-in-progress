@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Scholarly HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+</head>
+
+<header>
+    <h1>Scholarly HTML</h1>
+  </header>
+
+  <div role="contentinfo">
+    <dl>
+      <dt>Autori</dt>
+      <dd>
+        <span typeof="schema:Person"
+        resource="https://github.com/AlexandraElena05">
+        <meta property="schema:givenName" content="Alexandra">
+        <meta property="schema:additionalName" content="-Elena">
+        <meta property="schema:familyName" content="Serdenciuc">
+        <span property="schema:name"> <a href= "https://github.com/AlexandraElena05">Alexandra-Elena Serdenciuc</a></span>
+        </span>
+        &amp;
+        <span typeof="schema:Person"
+        resource="https://github.com/Geo200">
+        <meta property="schema:givenName" content="Georgiana">
+        <meta property="schema:additionalName" content="">
+        <meta property="schema:familyName" content="Murărașu">
+        <span property="schema:name"> <a href= "https://github.com/Geo200">Georgiana Murărașu</a></span>
+        </span>
+        &amp;
+        <span typeof="schema:Person"
+        resource="https://github.com/Ionela99">
+        <meta property="schema:givenName" content="Ionele">
+        <meta property="schema:additionalName" content="">
+        <meta property="schema:familyName" content="Murărașu">
+        <span property="schema:name"> <a href= "https://github.com/Ionela99">Ionela Murărașu</a></span>
+        </span>
+      </dd>
+    
+    <dt>Source code</dt>
+    <dd>
+        <a href="https://github.com/Geo2000/TehnologiiWeb.git">GitHub</a>
+    </dd>
+  </dl>
+  </div> 
+   <div role="contentinfo">
+    <h2>Table of content</h2>
+    <ol role="directory">
+      <li>
+        <a href='#functionalities'>                         
+          Web application functionalities 
+      </a>
+          <ol role="directory">
+              <li>
+                  <a href='#about'>                             
+                      What is WhaF?
+                  </a>
+              </li>
+              <li>
+                  <a href='#home'>                        
+                      Home Page
+                  </a>
+              </li>
+              <li>
+                <a href='#recipe'>                        
+                  Recipe page
+                </a>
+            </li>
+              <li>
+                  <a href='#leaderboard'>                        
+                    Leaderboard Page
+                  </a>
+              </li>
+          </li>
+          <li>
+              <a href='#addrecipe'>                        
+                  Add recipe Page
+              </a>
+          </li>
+          </ol>
+      </li>
+      <li>
+          <a href='#user-experience'>                         
+              User Experience
+          </a>
+          <ol role="directory">
+            <li>
+                <a href='#first-use-case'>                        
+                    First use case - Home page
+                </a>
+            </li>
+            <li>
+                <a href='#second-use-case'>                        
+                  Second use case - Recipe page
+                </a>
+            </li>
+            <li>
+              <a href='#sc-stat'>                        
+                Third use case - Leaderboard
+              </a>
+            </li>
+             <li>
+            <a href='#sc-harta'>                        
+              Fourth use case - Add recipe 
+            </a>
+        </li>
+        </li>
+      </ol>
+      </li>
+      <li>
+        <a href='#motivation'>                        
+          Design motivation 
+        </a>
+    </li>
+    </ol>
+</div>
+  <section id="functionalities" role="funtionalities" typeof="sa:functionalities">
+    <h2 id="about">Web application's essentials</h2>
+    <p>
+        Numele proiectului WhaF vine de la What the food și reprezintă o platforma unde utilizatorii pot cauta rețete în fucție de preferințe. De asemenea, pentru cei puțin mai mult pasionați de gastronomie, ei își pot adăga propriile rețete, dau au cont.
+      
+      </p>
+       <h3 id="Home">Home page</h3>
+      <p>
+        Această pagină are rol de informare a utilizatorilor veniți pe platforma cu privire la scopul platformei, având prezentate chiar de pe acestă pagină ce facilități are platforma.
+      </p>
+      <h3 id="Recipe">Recipe page</h3>
+      <p>
+        Pagina Recipe permite utilizatorilor să vizualize mai multe rețete pentru ideile lor gastronomice.
+      </p>
+      <h3 id="Leaderboard">Leaderboard page</h3>
+      <p>
+        Acesta pagina este locul unde orice utilizator poate vizualiza mai multe topuri și le poate descărca.
+      </p>
+      <h3 id="AddRecipe">Add recipe page</h3>
+      <p>
+        Acestă pagină este pentru cei pasionați de gastronomie sau pur și simplu vor să împărtășească cu alții ideile lor de rețete.
+      </p>
+    </section>
+    <section id="user-experience" role="user-experience"  typeof="user-experience">
+      <h2>User experience</h2>
+      <h3 id="first-use-case">First use-case: <i>the home page</i></h3>
+      <p>Pagina de Home este punctul de pornire pentru utilizatorii intrați pe platformă. Aceasta faciliteaza accesarea paginilor următoare: </p>
+      <h3 id="second-use-case">Second use-case: <i>the recipe page</i></h3>
+      <p>Acestă pagină afișează toate rețetele, pe care utilizatorul le poate ordona după dificultate sau poate căuta o retetă anume în funcție de o listă de ingrediente pe care le introduce și dupa ingrediente favorite sau nefavorite.</p>
+      <h3 id="third-use-case">Thirst use-case: <i>the leaderboard page</i></h3>
+      <p>Acestă pagina oferă utilizatorilor topuri și:
+        <ul>
+            <li>Permite vizualizarea unui top a rețetelor cele mai populare (și descărcarea acestuia în format HTML)</li>
+            <li>Permite vizualizarea unui top cu cele mai populare ingrediente (și descărcarea acestuia în format CSV)</li>
+            <li>Permite vizualizarea unui top cu cele mai pevitate ingrediente (și descărcarea acestuia în format JSON)</li>
+        </ul>
+      </p>
+     <h3 id="fourth-use-case">Fourth use-case <i>the add recipe page</i></h3>
+     <p>
+      Aceasta pagină poate fi vizualizata doar de utilizatorii care își fac cont și sunt logați la momentul utilizării. Cu ajutorul acestei pagini ei pot adăuga propria rețetă.
+    </p>
+    </section>
+    <section id="motivation" role="motivation">
+      <h2>Design motivation</h2>
+      <p>O astfel de platformă ajută la eficientizarea lucrului în bucătărie, dar și ajută utilizatorul să pregătească ceva ușor și rapid cu ingredientele pe care deja le are în casă..
+</p>
+
+    </section>
+  </html>

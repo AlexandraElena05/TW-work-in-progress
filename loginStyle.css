@@ -1,0 +1,523 @@
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 3vw;
+    }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        width: 100%;
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+
+    .left-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    #logo {
+        padding-bottom: 0.9rem;
+        color: #2A2B40;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .icon {
+        color: #2A2B40;
+        padding-bottom: 0.5rem;
+    }
+
+    #myLinks {
+        display: none;
+    }
+
+    p a {
+        display: block;
+        color: #2A2B40;
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.3rem;
+        font-weight: normal;
+    }
+
+    .right-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        margin-right: 1.42rem;
+        position: absolute;
+        top: 0.8rem;
+        left: 18rem;
+    }
+
+    .right-menu p {
+        margin: 0.6rem 0;
+    } 
+
+    #register {
+        padding-left: 0.7rem;
+    }
+
+    #register a {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0.8rem 1.6rem;
+        border: 2px solid #ef3737;
+        border-radius: 1.71rem;  
+        margin-left: 0.85rem; 
+    }
+
+    hr {
+        border: 0;
+        height: 0;
+        box-shadow: 0 0 0.2rem 0.1rem rgb(235, 3, 3);
+    }
+
+    .container{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        background-color: #ffffff;
+        overflow: hidden;
+    }
+
+    .login-part{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .title-form{
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.2rem;
+        color: black;
+        margin-bottom: 10px;
+    }
+
+    label{  
+        color: crimson;  
+        font-size: 17px;  
+    }  
+
+    .input-field{
+        max-width: 380px;
+        width: 100%;
+        height: 55px;
+        background-color: #f0f0f0;
+        margin: 10px 0;
+        border-radius: 55px;
+        display: grid;
+        grid-template-columns: 15% 85%;
+        padding: 0 .4rem;
+    }
+
+    .input-field i{
+        text-align: center;
+        line-height: 55px;
+        color: #acacaa;
+        font-size: 1.1rem;
+    }
+
+    .input-field input{
+        background: none;
+        outline: none;
+        border: none;
+        line-height: 1;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #333;
+    }
+
+    .input-field input::placeholder{
+        color: #aaa;
+        font-weight: 500;
+    }
+
+    .btn{
+        width: 150px;
+        height: 49px;
+        border: none;
+        outline: none;
+        border-radius: 49px;
+        cursor: pointer;
+        background-color: crimson;
+        color: cornsilk;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 10px 0;
+        transition: .5s;
+    }
+
+    .btn:hover{
+        background-color: crimson;
+    }
+
+    .alt a{
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.0rem;
+        color: crimson;
+    }
+
+    .alt p{
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.0rem;
+        align-items: center;
+        align-content: center;
+    }
+
+   .login-logout p{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+   }
+
+    .social a{  
+        align-content: center; 
+        text-align: center;
+    }  
+
+    .social-text{
+        font-family: 'Raleway', sans-serif;
+        padding: .7rem 0;
+        font-size: 1rem;
+    }
+
+    .social{
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-icon{
+        height: 46px;
+        width: 46px;
+        border: 1px solid #333;
+        margin: 0 0.45rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+        font-size: 1.1rem;
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+
+    .social-icon:hover{
+        color: crimson;
+        border-color: crimson;
+    }
+
+    .foot {
+        background: url('img/login.jpg') repeat-x;
+        height: 175px;
+        grid-template-columns: [first] 1fr [second] 1fr [third] 1fr;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        position: fixed;
+        bottom: 0%;
+    }
+    
+    #copyright{
+        font-family: 'Raleway', sans-serif;
+        color:white;
+        grid-column-start: third;
+        align-self: start;
+        justify-self: end;
+        margin: 5px;
+    }
+    
+    #footer-text{
+        font-family: 'Raleway', sans-serif;
+        color:white;
+        align-content: center;
+        text-align: center;
+        font-size: 1.9rem;
+        font-weight: normal;
+        line-height: 3.3rem;
+        width: 35rem;
+        grid-column-start: second;
+        justify-self: center;
+        align-self: center;
+        grid-row-start: 1;
+    }
+}
+
+@media (min-width: 701px){
+    html {
+        font-size: 1.2vw;
+    }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 1rem 3.33rem;
+        margin-left: 1rem;
+    }
+
+    .left-menu, .right-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    #logo {
+        color: #2A2B40;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    #myLinks {
+        margin-left: 5rem;
+    }
+
+    p {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    p a {
+        display: block;
+        padding: 0 0.8rem 0 2rem;
+        color: #2A2B40;
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+
+    #register a {
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 0.9rem 2.5rem;
+        border: 3px solid #ef3737;
+        border-radius: 18.9rem;    
+        margin-left: 2.08rem;
+        margin-right: 3rem;
+    }
+
+    hr {
+        border: 0;
+        height: 0;
+        box-shadow: 0 0 0.2rem 0.13rem rgb(235, 3, 3);
+    }
+
+    .container{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        background-color: #ffffff;
+        overflow: hidden;
+    }
+
+    .login-part{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .title-form{
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.2rem;
+        color: black;
+        margin-bottom: 10px;
+    }
+
+    label{  
+        color: crimson;  
+        font-size: 17px;  
+    }  
+
+    .input-field{
+        max-width: 380px;
+        width: 100%;
+        height: 55px;
+        background-color: #f0f0f0;
+        margin: 10px 0;
+        border-radius: 55px;
+        display: grid;
+        grid-template-columns: 15% 85%;
+        padding: 0 .4rem;
+    }
+
+    .input-field i{
+        text-align: center;
+        line-height: 55px;
+        color: #acacaa;
+        font-size: 1.1rem;
+    }
+
+    .input-field input{
+        background: none;
+        outline: none;
+        border: none;
+        line-height: 1;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #333;
+    }
+
+    .input-field input::placeholder{
+        color: #aaa;
+        font-weight: 500;
+    }
+
+    .btn{
+        width: 150px;
+        height: 49px;
+        border: none;
+        outline: none;
+        border-radius: 49px;
+        cursor: pointer;
+        background-color: crimson;
+        color: cornsilk;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 10px 0;
+        transition: .5s;
+    }
+
+    .btn:hover{
+        background-color: crimson;
+    }
+
+    span{  
+        color: crimson;  
+        font-size: 17px; 
+    }
+
+    .alt a{
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.0rem;
+        color: crimson;
+    }
+
+    .alt p{
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.0rem;
+        align-items: center;
+        align-content: center;
+    }
+
+    .login-logout p{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    a{  
+        align-content: center; 
+        text-align: center;
+    } 
+
+    .social-text{
+        font-family: 'Raleway', sans-serif;
+        padding: .7rem 0;
+        font-size: 1rem;
+    }
+
+    .social{
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-icon{
+        height: 46px;
+        width: 46px;
+        border: 1px solid #333;
+        margin: 0 0.45rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+        font-size: 1.1rem;
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+
+    .social-icon:hover{
+        color: crimson;
+        border-color: crimson;
+    }
+
+    .foot {
+        background: url('img/login.jpg') repeat-x;
+        height: 175px;
+        grid-template-columns: [first] 1fr [second] 1fr [third] 1fr;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        position: fixed;
+        bottom: 0%;
+    }
+
+    #copyright{
+        font-family: 'Raleway', sans-serif;
+        color:white;
+        grid-column-start: third;
+        align-self: start;
+        justify-self: end;
+        margin: 5px;
+    }
+
+    #footer-text{
+        font-family: 'Raleway', sans-serif;
+        color:white;
+        align-content: center;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: normal;
+        line-height: 3.3rem;
+        width: 40rem;
+        grid-column-start: second;
+        justify-self: center;
+        align-self: center;
+        grid-row-start: 1;
+    }
+}

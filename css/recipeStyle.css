@@ -1,0 +1,408 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 3vw;
+    }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        width: 100%;
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+
+    .left-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    #logo {
+        padding-bottom: 0.9rem;
+        color: #2A2B40;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .icon {
+        color: #2A2B40;
+        padding-bottom: 0.5rem;
+    }
+
+    #myLinks {
+        display: none;
+    }
+
+    p a {
+        display: block;
+        color: #2A2B40;
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.3rem;
+        font-weight: normal;
+    }
+
+    .right-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        margin-right: 1.42rem;
+        position: absolute;
+        top: 0.8rem;
+        left: 18rem;
+    }
+
+    .right-menu p {
+        margin: 0.6rem 0;
+    } 
+
+    #register {
+        padding-left: 0.7rem;
+    }
+
+    #register a {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0.8rem 1.6rem;
+        border: 2px solid #ef3737;
+        border-radius: 1.71rem;  
+        margin-left: 0.85rem; 
+    }
+
+    hr {
+        border: 0;
+        height: 0;
+        box-shadow: 0 0 0.2rem 0.1rem rgb(235, 3, 3);
+    }
+
+    .content {
+        padding: 1rem 2rem;
+    }
+
+    .content p {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.3rem;
+        font-weight: normal;
+        line-height: 2.8rem;
+        padding-bottom: 1rem;
+    }
+
+    .search-container {
+        width: 17.5rem; 
+        height: auto;
+        margin-bottom: 3rem;
+    }
+
+    .sortForm {
+        margin-top: -1rem;
+    }
+
+    input[type=text], select {
+        padding: 0.5rem 1.3rem;
+        margin-top: 0.4rem;
+        font-size: 1.1rem;
+        border: 0.1rem solid #ef3737;
+        font-family: 'Raleway', sans-serif;
+        color: #2A2B40;
+        border-radius: 0.4rem;
+    }
+
+    .search-container button {
+        float: right;
+        padding: 0.56rem 0.66rem;
+        margin-top: 0.4rem;
+        background: #f79b9b;
+        font-size: 0.95rem;
+        border: 0.1rem solid #ef3737;
+        cursor: pointer;
+        border-radius: 0.4rem;
+    }
+
+    input:-internal-autofill-selected {
+        background-color: #ffffff;
+    }
+
+    input:focus, select:focus {
+        outline: none;
+    }
+
+    .ingredients {
+        /* display: flex;
+        flex-direction: column; */
+        font-family: 'Raleway', sans-serif;
+        color: #2A2B40;
+    }
+
+    .dislikes {
+        margin-top: 1rem;
+    }
+    
+    .filters {
+        margin-top: 1rem;
+    }
+
+    #preparationTime {
+        margin-left: 0.7rem;
+    }
+
+    .orderByForm {
+        margin-bottom: 5rem;
+        margin-top: 1rem;
+    }
+
+    .orderByForm label {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.1rem;
+        padding-bottom: 1rem;
+        color: #2A2B40;
+        padding-right: 0.7rem;
+    }
+
+    .recipes-feed {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .image-container, .image-container img {
+        width: 100%;
+    }
+
+    .image-container a {
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        color: #2A2B40;
+    }
+
+    .image-container h4 {
+        text-align: center;
+        margin: 0.5rem;
+    }
+
+    .image-container {
+        padding-bottom: 3rem;
+    }
+
+    .difficulty, .time {
+        padding-right: 0.3rem;
+        border-right: 1.5px solid #42435c;
+    }
+
+    .time, .appreciations {
+        padding-left: 0.3rem;
+    }
+}
+
+@media (min-width: 701px){
+    html {
+        font-size: 1.2vw;
+    }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 1rem 3.33rem;
+        margin-left: 1rem;
+    }
+
+    .left-menu, .right-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        color: #2A2B40;
+    }
+
+    #logo {
+        color: #2A2B40;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    #myLinks {
+        margin-left: 5rem;
+    }
+
+    .active {
+        text-decoration: underline;
+        text-decoration-color: #2A2B40;
+    }
+
+    p {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    p a {
+        display: block;
+        padding: 0 0.8rem 0 2rem;
+        color: #2A2B40;
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+
+    #register a {
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 0.9rem 2.5rem;
+        border: 3px solid #ef3737;
+        border-radius: 18.9rem;    
+        margin-left: 2.08rem;
+        margin-right: 3rem;
+    }
+
+    hr {
+        border: 0;
+        height: 0;
+        box-shadow: 0 0 0.2rem 0.13rem rgb(235, 3, 3);
+    }
+
+    .content {
+        padding: 1rem 4.33rem;
+    }
+
+    .content p {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.2rem;
+        font-weight: normal;
+        line-height: 2.3rem;
+        padding-bottom: 1rem;
+        color: #2A2B40;
+    }
+
+    .search-container {
+        position: relative;
+        margin-bottom: 1rem;
+    } 
+
+    input[type=text] , select {
+        padding: 0.5rem 1.3rem;
+        margin-top: 0.4rem;
+        font-size: 0.93rem;
+        border: 0.1rem solid #ef3737;
+        font-family: 'Raleway', sans-serif;
+        color: #2A2B40;
+        border-radius: 0.4rem;
+    }
+
+    input:-internal-autofill-selected {
+        background-color: #ffffff;
+    }
+
+    input:focus, select:focus {
+        outline: none;
+    }
+
+    .search-container button {
+        float: right;
+        padding: 0.5rem 0.6rem;
+        margin-top: 0.4rem;
+        margin-left: 0.8rem;
+        background: #f79b9b;
+        font-size: 0.95rem;
+        border: 0.1rem solid #ef3737;
+        cursor: pointer;
+        border-radius: 0.4rem;
+        position: absolute;
+        top: 0;
+        left: 12.8rem;
+    }
+
+    .ingredients {
+        font-family: 'Raleway', sans-serif;
+        color: #2A2B40;
+    }
+    
+    .filters {
+        margin-top: 1rem;
+    }
+
+    #preparationTime {
+        margin-left: 0.7rem;
+    }
+
+    .orderByForm {
+        float: right;
+        margin-bottom: 5rem;
+    }
+
+    .orderByForm label {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.1rem;
+        padding-bottom: 1rem;
+        color: #2A2B40;
+        padding-right: 0.7rem;
+    }
+
+    .recipes-feed {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 95%;
+        margin: 0 auto;
+        padding-left: 1rem;
+    }
+
+    .image-container {
+        width: 50%;
+        padding-right: 3rem;
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+
+    .image-container a {
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        color: #2A2B40;
+    }
+
+    .image-container h4 {
+        text-align: center;
+        margin: 0.5rem;
+    }
+
+    .image-container {
+        padding-bottom: 3rem;
+    }
+
+    .difficulty, .time {
+        padding-right: 0.3rem;
+        border-right: 1.5px solid #42435c;
+    }
+
+    .time, .appreciations {
+        padding-left: 0.3rem;
+    }
+}

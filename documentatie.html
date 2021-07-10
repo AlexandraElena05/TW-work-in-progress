@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Documentatie WhaF</title>
+    <link rel="stylesheet" type="text/css" href="documentatie.css">
+</head>
+
+<body>
+    <h1>
+        WhaF
+    </h1>
+
+    <div id="catalog">
+        <ol>
+            <li><a href="#abstract">Abstract</a></li>
+            <li><a href="#introducere">Introducere</a>
+                <ol type="a">
+                    <li><a href="#motivatie">Motivatie</a></li>
+                </ol>
+            </li>
+            <li><a href="#structura">Structura</a>
+                <ol type='a'>
+                    <li><a href="#homepage">Pagina Home</a></li>
+                    <li><a href="#leaderboardPage">Pagina Leaderboard</a></li>
+                    <li><a href="#recipesPage">Pagina Recipes</a></li>
+                    <li><a href="#loginPage">Pagina Login</a></li>
+                    <li><a href="#registerPage">Pagina Register</a></li>
+                </ol>
+            </li>
+            <li><a href="#arhitectura">Arhitectura</a>
+                <ol type='a'>
+                    <li><a href="#abordaremicro">Abordare bazata pe microservicii</a></li>
+                    <ol type="i">
+                        <li><a href="#users">Users</a></li>
+                        <li><a href="#columns">Columns</a></li>
+                        <li><a href="#values">Values</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ol>
+                    <li><a href="#fatclient">Fat client</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#implementare">Implementare</a>
+                <ol type="a">
+                    <li><a href="#frontend">Front-end</a></li>
+                    <li><a href="#backend">Back-end</a></li>
+                    <li><a href="#bazadate">Baza de date</a></li>
+                </ol>
+            </li>
+            <li><a href="#metodologii">Metodologii</a>
+                <ol type="a">
+                    <li><a href="#github">Github</a></li>
+                    <li><a href="#kanban">Kanban</a></li>
+                </ol>
+            </li>
+            <li><a href="#concluzii">Concluzii</a></li>
+        </ol>
+    </div>
+
+    <section id="abstract">
+        <div>
+            <h2>Abstract</h2>
+            <p>
+                Numele proiectului WhaF vine de la What the food și reprezintă o platforma unde utilizatorii pot cauta rețete în fucție de preferințe.
+            </p>
+        </div>
+    </section>
+
+    <section id="introducere">
+        <div>
+            <h2>Introducere</h2>
+            <p>
+                Utilizatorul poate alege în momentul căutării ce ingrediene dorește să folosească și ce ingrediente dorește să evite, astfel platforma oferindu-i o varitate de rețete în funcție de ce dorește utilizatorul, adăugând un număr minim de ingrediente la cele deja solicitate.
+            </p>
+            <section id="motivatie">
+                <div>
+                    <h3> Motivatie </h3>
+                    <p>
+                        O astfel de platformă ajută la eficientizarea lucrului în bucătărie, dar și ajută utilizatorul să pregătească ceva ușor și rapid cu ingredientele pe care deja le are în casă.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section id="structura">
+        <div>
+            <h2>Structura</h2>
+            <p>
+                Platforma noastră a fost împărțită în cinci pagini html, fiecare având propriul scop și propria funcționalitate.
+            </p>
+        </div>
+        <section id="homepage">
+            <div>
+                <h3>Pagina home</h3>
+                <p>
+                    Această pagină are rol de informare a utilizatorilor veniți pe platforma cu privire la scopul platformei, având prezentate chiar de pe acestă pagină ce facilități are platforma.
+                    <br>
+                </p>
+            </div>
+        </section>
+
+        <section id="leaderboardPage">
+            <div>
+                <h3>Leaderboard Page</h3>
+                <p>
+                    Aceasta pagină are mai multe functionalitati:
+                    <ul>
+                        <li>Permite vizualizarea unui top a rețetelor cele mai populare (și descărcarea acestuia în format HTML)</li>
+                        <li>Permite vizualizarea unui top cu cele mai populare ingrediente (și descărcarea acestuia în format CSV)</li>
+                        <li>Permite vizualizarea unui top cu cele mai pevitate ingrediente (și descărcarea acestuia în format JSON)</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+
+        <section id="recipesPage">
+            <div>
+                <h3>Pagina Recipes</h3>
+                <p>
+                
+                </p>
+            </div>
+        </section>
+
+        <section id="loginPage">
+            <div>
+                <h3>Pagina Login</h3>
+                <p>
+                    Aceasta pagina are rolul de a lăsa utilizatorul să-si introduca datele cu care s-a înregistrat pe platforma pentru a intra în contul personal și are nevoie de următoarele date:
+                    <ul>
+                        <li>Username-ul</li>
+                        <li>Password-ul (parolă care o să fie criptată)</li>
+                    </ul>
+                </p>
+                <p>Daca utilizatorul si-a uitat parola, are posibilitatea sa-si faca alta printr-un click pe cuvantul "Password" de sub formular</p>
+                <p>Utilizatorul are posibilitatea sa intre si in cont si prin intermediul unuia dintre conturile de social media (Google, Facebook, Twitter sau LinkedIn)</p>
+            </div>
+        </section>
+
+        <section id="registerPage">
+            <div>
+                <h3>Pagina Register</h3>
+                <p>
+                    Aceasta pagina are rolul de a da utilizatorilor posibilitatea de a-si face cont pe platforma prin oferirea urmatoarelor date:
+                    <ul>
+                        <li>Un username</li>
+                        <li>O parola</li>
+                        <li>Adresa de email</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+
+        <section id="arhitectura">
+            <div>
+                <h2>Arhitectura</h2>
+                <section id="abordaremicro">
+                    <div>
+                        <h3>Abordare bazata pe microservicii</h3>
+            </div>
+
+        </section>
+
+        <section id="implementare">
+            <div>
+                <h2>Implementare</h2>
+                <section id="frontend">
+                    <div>
+                        <h3>Front-end</h3>
+                        <p>
+                            Stack folosit: HTML5, CSS3, Javascript (Vanilla)
+                        </p>
+                    </div>
+                </section>
+                <section id="backend">
+                    <div>
+                        <h3>Back-end</h3>
+                        <p>
+                            Stack folosit: PHP
+                            <br> Lucrul mai simplu cu bazele de date
+                            <br> Totodata în urma unui research facut de fiecare, am hotarat ca PHP este alegerea cea mai buna pentru aceasta platforma.
+                        </p>
+                    </div>
+                </section>
+                <section id="bazadate">
+                    <div>
+                        <h3>Baza de date</h3>
+                        <p>
+                            Datele platformei o să fie salvate in mai multe baze de date.
+                            <br> Momentan am luat în considerare urmatoarele baze de date:
+                            <ul>
+                                <li>User database</li>
+                                <p> În acesta stocam datele de autentificare ale utilizatorilor.</p>
+                                <li>Recipe database</li>
+                                <p> În acesta o sa stoca datele despre fiecare reteta în parte</p>
+                                </ul>
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section id="metodologii">
+            <div>
+                <h2>Metodologii</h2>
+                <p>
+                    Pentru o colaborare cat mai eficienta, am folosit Github pentru versionarea codului.
+                </p>
+                <section id="github">
+                    <div>
+                        <h3>Github</h3>
+                        <p>
+                            <br> Repository-ul proiectului se regaseste <a href="https://github.com/Geo2000/TehnologiiWeb.git">aici</a>
+                        </p>
+                    </div>
+                </section>
+
+        <section id="concluzii">
+            <div>
+                <h2> Concluzii </h2>
+                <p>
+                    Ne dorim ca acestă platformă sa fie le vina în ajutorul tuturor celor care doresc sa gătească, dar au ramas în pană de inspirație.
+                </p>
+            </div>
+        </section>
+
+
+</body>
+<footer>
+    <p style="text-align: center;">
+        (C) Murărașu Georgiana (2B5), Murărașu Ionela(X), Serdenciuc Alexandra-Elena(2B5) - Tehnologii Web 2021
+    </p>
+</footer>
+
+</html>
